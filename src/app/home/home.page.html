@@ -34,4 +34,37 @@
       </ion-list>
     </div>
   </div>
+
+  <ion-list>
+    <ion-list-header
+      ><ion-label> Other Test Items (from customer) </ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label [innerHTML]="'<span>Span with Innerhtml</span>'"> </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label
+        [innerHTML]="'Safecontent <span>spanContent</span> <script></script>'"
+      >
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label
+        [innerHTML]="
+        '<span>Span with Innerhtml, sanitized by pipe</span>' | safeHtml
+      "
+      >
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label
+        [innerHTML]="
+        sanitizer.bypassSecurityTrustHtml(
+          '<span>span with Innerhtml, sanitized directly</span>'
+        )
+      "
+      >
+      </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
