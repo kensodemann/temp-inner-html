@@ -1,4 +1,4 @@
-import { NgSwitch, NgSwitchCase, NgSwitchDefault } from '@angular/common';
+
 import { Component } from '@angular/core';
 import {
   IonHeader,
@@ -18,20 +18,17 @@ import { DomSanitizer } from '@angular/platform-browser';
     templateUrl: 'home.page.html',
     styleUrls: ['home.page.scss'],
     imports: [
-        IonListHeader,
-        IonLabel,
-        IonItem,
-        IonList,
-        IonListHeader,
-        IonHeader,
-        IonToolbar,
-        IonTitle,
-        IonContent,
-        NgSwitch,
-        NgSwitchCase,
-        NgSwitchDefault,
-        SafeHtmlPipe,
-    ]
+    IonListHeader,
+    IonLabel,
+    IonItem,
+    IonList,
+    IonListHeader,
+    IonHeader,
+    IonToolbar,
+    IonTitle,
+    IonContent,
+    SafeHtmlPipe
+]
 })
 export class HomePage {
   endingHtml = '<h1>Done...</h1><p>And now my brain is fried. Oooops...</p>';
