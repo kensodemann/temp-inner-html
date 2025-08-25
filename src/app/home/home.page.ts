@@ -14,25 +14,24 @@ import { SafeHtmlPipe } from './safe-html.pipe';
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
-  standalone: true,
-  imports: [
-    IonListHeader,
-    IonLabel,
-    IonItem,
-    IonList,
-    IonListHeader,
-    IonHeader,
-    IonToolbar,
-    IonTitle,
-    IonContent,
-    NgSwitch,
-    NgSwitchCase,
-    NgSwitchDefault,
-    SafeHtmlPipe,
-  ],
+    selector: 'app-home',
+    templateUrl: 'home.page.html',
+    styleUrls: ['home.page.scss'],
+    imports: [
+        IonListHeader,
+        IonLabel,
+        IonItem,
+        IonList,
+        IonListHeader,
+        IonHeader,
+        IonToolbar,
+        IonTitle,
+        IonContent,
+        NgSwitch,
+        NgSwitchCase,
+        NgSwitchDefault,
+        SafeHtmlPipe,
+    ]
 })
 export class HomePage {
   endingHtml = '<h1>Done...</h1><p>And now my brain is fried. Oooops...</p>';
